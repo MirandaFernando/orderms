@@ -9,7 +9,7 @@ public class OrderItem {
     private String product;
     private Integer quantity;
 
-    @Field(targetType = FieldType.ARRAY)
+    @Field(targetType = FieldType.DECIMAL128)
     private BigDecimal price;
 
     public OrderItem( String product, BigDecimal price, Integer quantity) {

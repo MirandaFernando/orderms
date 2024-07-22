@@ -18,8 +18,9 @@ public class OrderEntity {
     @Indexed(name="customer_id_index")
     private Long customerId;
 
-    @Field(targetType = FieldType.ARRAY)
+    @Field(targetType = FieldType.DECIMAL128)
     private BigDecimal total;
+
     private List<OrderItem> items;
 
     public Long getOrderId() {

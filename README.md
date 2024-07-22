@@ -1,5 +1,4 @@
-# locadora-api
-
+# Order Ms
 
 git clone https://github.com/MirandaFernando/orderms
 
@@ -13,12 +12,11 @@ mvn dependency:resolve  (precisa estar na vesão 21 do Java)  - Para instalar mv
 
 Se tudo ocorreu como esperado: [INFO] BUILD SUCCESS
 
+cd  local/
+
+docker-compose build -d
+se não subir o container docker-compose up -d
 
 Abrir o projeto na sua IDE de preferência.
 Escolher o arquivo application.properties e configurar o banco de dados.
-
-Criar um banco de dados chamado locadora ( o esquema será gerado via JPA)
-
-Executar o projeto ( executar/debugar o arquivo LocadoraApiApplication.java)
-
-Se tudo ocorreu conforme orientado, as tabelas do banco terão sido criadas.
+Executar o projeto ( executar/debugar o arquivo OrdermsApplication.java)
